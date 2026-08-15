@@ -1,0 +1,45 @@
+body{
+    background-color: #F1ECDA;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #7B011E;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #F1ECDA;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+
+
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+        color: #F1ECDA;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: row;
+
+}
+
+img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 10px solid #7B011E;
+}
+/* COLORS: WARM WHITE: #F1ECDA, BLUE:#758695 RED: #7B011E

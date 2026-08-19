@@ -179,8 +179,15 @@ img {
 .school-projects,
 .home-projects {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-direction: row;
+    gap: 20px;
+    
+    /* Maakt horizontaal scrollen mogelijk */
+    overflow-x: auto; 
+    
+    /* Zorgt voor een nette uitlijning tijdens het scrollen */
+    padding-bottom: 15px; 
+    scroll-behavior: smooth;
 }
 
 .school-projects h1,
@@ -190,18 +197,47 @@ img {
 }
 
 .project {
-    width: 200px;
-    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F1ECDA;
     border: 1px solid rgba(123, 1, 30, 0.35);
-    border-radius: 20px;
     box-shadow: rgba(123, 1, 30, 0.45) 0px 5px 15px;
+    overflow: hidden;
+    
+    /* Zorgt dat de kaart niet kleiner wordt dan de opgegeven breedte */
+    flex-shrink: 0; 
+    border-radius: 8px; /* optioneel voor mooie afgeronde hoeken */
 }
 
+.project img{
+    width: 350px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 0px; 
+}
 
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
+.information{
+    border: 1px solid 
+}
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+
+input{
+    width: 150px;
+    height: 25px;
+    
+
+}

@@ -182,12 +182,13 @@ img {
     flex-direction: row;
     gap: 20px;
     
-    /* Maakt horizontaal scrollen mogelijk */
     overflow-x: auto; 
     
-    /* Zorgt voor een nette uitlijning tijdens het scrollen */
     padding-bottom: 15px; 
     scroll-behavior: smooth;
+
+    scrollbar-width: thin;
+    scrollbar-color: #7B011E rgba(123, 1, 30, 0.1);
 }
 
 .school-projects h1,
@@ -203,10 +204,8 @@ img {
     border: 1px solid rgba(123, 1, 30, 0.35);
     box-shadow: rgba(123, 1, 30, 0.45) 0px 5px 15px;
     overflow: hidden;
-    
-    /* Zorgt dat de kaart niet kleiner wordt dan de opgegeven breedte */
     flex-shrink: 0; 
-    border-radius: 8px; /* optioneel voor mooie afgeronde hoeken */
+    border-radius: 8px; 
 }
 
 .project img{
@@ -214,6 +213,27 @@ img {
     height: 175px;
     object-fit: cover;
     border-radius: 0px; 
+}
+
+.school-projects::-webkit-scrollbar,
+.home-projects::-webkit-scrollbar {
+    height: 8px; 
+}
+
+.school-projects::-webkit-scrollbar-track,
+.home-projects::-webkit-scrollbar-track {
+    background: rgba(123, 1, 30, 0.1); 
+    border-radius: 10px;
+}
+
+.school-projects::-webkit-scrollbar-thumb,
+.home-projects::-webkit-scrollbar-thumb {
+    background: #7B011E; 
+}
+
+.school-projects::-webkit-scrollbar-thumb:hover,
+.home-projects::-webkit-scrollbar-thumb:hover {
+    background: #5a0016; 
 }
 
 .contact{
@@ -239,5 +259,4 @@ input{
     width: 150px;
     height: 25px;
     
-
 }

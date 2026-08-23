@@ -198,7 +198,7 @@ img {
 }
 
 .skill:hover{
-  transform: skewY(3deg);
+  transform: skewX(3deg);
   box-shadow: #7B011E 0px 20px 30px -10px;
 }
 
@@ -218,12 +218,9 @@ img {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    
     overflow-x: auto; 
-    
     padding-bottom: 15px; 
     scroll-behavior: smooth;
-
     scrollbar-width: thin;
     scrollbar-color: #7B011E rgba(123, 1, 30, 0.1);
 }

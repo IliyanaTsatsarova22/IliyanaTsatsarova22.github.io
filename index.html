@@ -31,7 +31,7 @@
                <div class="typing-container">
             <h1 class="typing-text">Iliyana Tsatsarova</h1>
         </div>
-                <p class="discription">
+                <p class="home-description">
                     I’m a motivated software developer in training with a passion for creating websites and interactive applications. 
                     I enjoy learning new technologies, solving problems and turning ideas into functional projects
                 </p>
@@ -52,19 +52,38 @@
     <section id="skills" class="skills">
         <div class="my-skills">
             <div class="skill">
-                <p>HTML</p>
+                <p class="skill-title">HTML</p>
+                <p class="skill-description">HTML stands for HyperText Markup Language. 
+                    It is the standard code used to build and shape web pages. 
+                    It uses tags to tell a web browser how to show text, images, and links.
+                </p>
             </div>
             <div class="skill">
-                <p>CSS</p>
+                <p class="skill-title">CSS</p>
+                <p class="skill-description">
+                    CSS (Cascading Style Sheets) designs the layout, colors, visual styling and responsiveness of web pages.
+                </p>
             </div>
             <div class="skill">
-                <p>JavaScript</p>
+                <p class="skill-title">JavaScript</p>
+                <p class="skill-description">
+                    JavaScript is a programming language that makes web pages interactive, 
+                    enabling elements like animations, dynamic content updates and user form validation.
+                </p>
             </div>
             <div class="skill">
-                <p>PHP</p>
+                <p class="skill-title">PHP</p>
+                <p class="skill-description">
+                    PHP is a server-side scripting language that processes server logic, 
+                    interacts with the database and dynamically generates HTML content 
+                    before sending it to the user's browser.
+                </p>
             </div>
             <div class="skill">
-                <p>DataBase</p>
+                <p class="skill-title">DataBase</p>
+                <p class="skill-description">
+                    Database is a structured system (like MySQL) used to store, organize, manage and quickly retrieve a website's data.
+                </p>
             </div>
 
         </div>
@@ -100,31 +119,33 @@
 
 
 
-    <section id="contact" class="contact">
-        <div class="information">
-            <p>Email: Iliyanatsatsarova@outlook.com</p>
-            <p>
-                Beschikbaarheid:
-                - maandag tot vrijdag
-                - van 9:00 t/m 18:00
-            </p>
-        </div>
-        <div class="contact-form">
-            <form>
-                <label for="Fname">First name:</label>
-                <input type="text" id="Fname" name="firstname" placeholder="Your name...">
-                <br>
-                <label for="Lname">Last name:</label>
-                <input type="text" id="Lname" name="lastname" placeholder="Your last name...">
-                <br>
-                <label for="message">Your message</label>
-                <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+<section id="contact" class="contact">
+    <div class="information">
+        <p><strong>Email:</strong> Iliyanatsatsarova@outlook.com</p>
+        <p>
+            <strong>Beschikbaarheid:</strong><br>
+            • maandag tot vrijdag<br>
+            • van 9:00 t/m 18:00
+        </p>
+    </div>
 
-                <input type="submit" value="Send">
-            </form>
+    <div class="contact-form">
+        <form>
+            <h2>Contact me</h2>
+            
+            <label for="Fname">First name:</label>
+            <input type="text" id="Fname" name="firstname" placeholder="Your name..." required>
 
-        </div>
-    </section>
+            <label for="Lname">Last name:</label>
+            <input type="text" id="Lname" name="lastname" placeholder="Your last name..." required>
+
+            <label for="message">Your message:</label>
+            <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+            <button type="submit" name="submit">Send</button>
+        </form>
+    </div>
+</section>
 
 
 </body>

@@ -248,43 +248,59 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px; 
-    padding: 40px;
+    gap: 40px; 
+    padding: 100px 20px 60px 20px; 
+}
+
+.project-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.section-title {
+    color: #66FCF1;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .school-projects,
 .home-projects {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 25px;
     overflow-x: auto; 
-    padding-bottom: 15px; 
+    padding: 10px 5px 20px 5px; 
     scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: #45A29E rgba(123, 1, 30, 0.1);
-}
-.project-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Kleine ruimte tussen de titel en de kaarten! */
+    width: 100%;
+    flex-wrap: nowrap; 
+    scrollbar-width: none; 
 }
 
-.section-title {
-    color: #66FCF1;
-    font-weight: bold;
-    font-size: 1.7rem;
+.school-projects::-webkit-scrollbar,
+.home-projects::-webkit-scrollbar {
+    display: none;
 }
 
 .project {
-    width: 350px;  
-    height: 175px; 
+    width: 400px;   
+    height: 220px; 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0; 
-    border-radius: 8px; 
+    border-radius: 12px; 
     position: relative; 
     overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(102, 252, 241, 0.15);
+    background-color: #1d1f29;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
 }
 
 .project a {
@@ -300,26 +316,28 @@ a {
     display: block; 
 }
 
-
-.project-overlay{
+.project-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #27615e, transparent);
+    background: linear-gradient(to top, rgba(39, 97, 94, 0.9), rgba(29, 31, 41, 0.4));
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 20px;
+    align-items: center;
     opacity: 0; 
     transition: opacity 0.3s ease;
 }
 
 .project-overlay span {
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     font-size: 1.2rem;
+    background-color: rgba(31, 40, 51, 0.6);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #66FCF1;
 }
 
 .project:hover .project-overlay {
@@ -328,23 +346,7 @@ a {
 
 
 
-.school-projects::-webkit-scrollbar,
-.home-projects::-webkit-scrollbar {
-    height: 8px; 
-}
-
-.school-projects::-webkit-scrollbar-track,
-.home-projects::-webkit-scrollbar-track {
-    background: rgba(123, 1, 30, 0.1); 
-    border-radius: 10px;
-}
-
-.school-projects::-webkit-scrollbar-thumb,
-.home-projects::-webkit-scrollbar-thumb {
-    background: #7B011E; 
-}
-
-
+/* CONTACT */
 .contact-container {
     min-height: calc(100vh - 80px); 
     display: flex;
@@ -404,7 +406,6 @@ a {
     font-size: 0.95rem;
 }
 
-/* FORMULIER CONTAINER */
 .contact-form-wrapper {
     flex: 1.1;
     background-color: rgba(31, 40, 51, 0.5);

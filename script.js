@@ -33,3 +33,39 @@ form.addEventListener('submit', async function(e) {
         showToast('An error occurred while sending your message.', true);
     }
 });
+
+
+
+function autoScrollProjects(containerId, intervalTime = 3000) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    let scrollInterval = null;
+
+    function startScrolling() {
+        scrollInterval = setInterval(() => {
+            const scrollAmount = 375; 
+            
+            if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 10) {
+                container.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }, intervalTime);
+    }
+
+    startScrolling();
+
+    container.addEventListener('mouseenter', () => {
+        clearInterval(scrollInterval);
+    });
+
+    container.addEventListener('mouseleave', () => {
+        startScrolling();
+    });
+}
+
+window.addEventListener('load', () => {
+    autoScrollProjects('schoolProjectsScroll', 1000); // Elke 3.5 seconde
+    autoScrollProjects('homeProjectsScroll', 1000);   // Elke 4 seconde
+});

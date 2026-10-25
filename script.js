@@ -66,6 +66,6 @@ function autoScrollProjects(containerId, intervalTime = 3000) {
 }
 
 window.addEventListener('load', () => {
-    autoScrollProjects('schoolProjectsScroll', 1000); // Elke 3.5 seconde
-    autoScrollProjects('homeProjectsScroll', 1000);   // Elke 4 seconde
+    autoScrollProjects('schoolProjectsScroll', 1000); 
+    autoScrollProjects('homeProjectsScroll', 1000);   
 });

@@ -103,16 +103,27 @@
             organize, manage and quickly retrieve a website's data.
           </p>
         </div>
+        <div class="skill">
+          <p class="skill-title">Symfony</p>
+          <p class="skill-description">
+            Symfony is a PHP framework used to build scalable web applications
+            following the MVC pattern, featuring robust routing, database
+            management, and reusable components.
+          </p>
+        </div>
       </div>
     </section>
 
-   <section id="projects" class="projects">
+    <section id="projects" class="projects">
       <div class="project-group">
         <div class="section-title">School projects</div>
         <div class="school-projects" id="schoolProjectsScroll">
           <div class="project">
             <a href="projects/project1.html" target="_blank">
-              <img src="img/Schermafbeelding 2026-08-19 220558.png" alt="School Project 1" />
+              <img
+                src="img/Schermafbeelding 2026-08-19 220558.png"
+                alt="School Project 1"
+              />
               <div class="project-overlay">
                 <span>Go to project &rarr;</span>
               </div>
@@ -121,7 +132,10 @@
 
           <div class="project">
             <a href="projects/project2.html" target="_blank">
-              <img src="img/Schermafbeelding 2026-08-19 220109.png" alt="School Project 2" />
+              <img
+                src="img/Schermafbeelding 2026-08-19 220109.png"
+                alt="School Project 2"
+              />
               <div class="project-overlay">
                 <span>Go to project &rarr;</span>
               </div>
@@ -130,7 +144,10 @@
 
           <div class="project">
             <a href="projects/project3.html" target="_blank">
-              <img src="img/Schermafbeelding 2026-08-19 220008.png" alt="School Project 3" />
+              <img
+                src="img/Schermafbeelding 2026-08-19 220008.png"
+                alt="School Project 3"
+              />
               <div class="project-overlay">
                 <span>Go to project &rarr;</span>
               </div>
@@ -139,7 +156,10 @@
 
           <div class="project">
             <a href="projects/project4.html" target="_blank">
-              <img src="img/Schermafbeelding 2026-08-19 220751.png" alt="School Project 4" />
+              <img
+                src="img/Schermafbeelding 2026-08-19 220751.png"
+                alt="School Project 4"
+              />
               <div class="project-overlay">
                 <span>Go to project &rarr;</span>
               </div>
@@ -153,7 +173,10 @@
         <div class="home-projects" id="homeProjectsScroll">
           <div class="project">
             <a href="projects/project1-own.html" target="_blank">
-              <img src="img/Schermafbeelding 2026-10-12 115418.png" alt="Study planner" />
+              <img
+                src="img/Schermafbeelding 2026-10-12 115418.png"
+                alt="Study planner"
+              />
               <div class="project-overlay">
                 <span>Go to project &rarr;</span>
               </div>
@@ -162,7 +185,10 @@
 
           <div class="project">
             <a href="projects/project2-own.html" target="_blank">
-              <img src="img/Schermafbeelding 2026-10-21 183036.png" alt="Book collection" />
+              <img
+                src="img/Schermafbeelding 2026-10-21 183036.png"
+                alt="Book collection"
+              />
               <div class="project-overlay">
                 <span>Go to project &rarr;</span>
               </div>
@@ -173,67 +199,89 @@
     </section>
 
     <section id="contact" class="contact-container">
-      <div class="contact-card"> 
-      <div class="contact-info">
-        <h2>Get in touch</h2>
-        <p class="subtitle">
-          Have a question or want to work together? Feel free to leave a message
-        </p>
+      <div class="contact-card">
+        <div class="contact-info">
+          <h2>Get in touch</h2>
+          <p class="subtitle">
+            Have a question or want to work together? Feel free to leave a
+            message
+          </p>
 
-        <div class="info-group">
-          <span class="info-label">Email:</span>
-          <a href="mailto:Iliyanatsatsarova@outlook.com" class="info-value">Iliyanatsatsarova@outlook.com</a>
+          <div class="info-group">
+            <span class="info-label">Email:</span>
+            <a href="mailto:Iliyanatsatsarova@outlook.com" class="info-value"
+              >Iliyanatsatsarova@outlook.com</a
+            >
 
-          <span class="info-label">Availability</span>
-          <ul class="availability-list">
-            <li>Monday to Friday</li>
-            <li>9:00 AM - 6:00 PM</li>
-          </ul>
+            <span class="info-label">Availability</span>
+            <ul class="availability-list">
+              <li>Monday to Friday</li>
+              <li>9:00 AM - 6:00 PM</li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="contact-form-wrapper">
+          <form
+            class="contact-form"
+            method="POST"
+            action="https://formsubmit.co/iliyanatsatsarova@outlook.com"
+          >
+            <h2>Contact me</h2>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Your first name..."
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="lname">Last name</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Your last name..."
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your e-mail..."
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Send</button>
+            <input type="hidden" name="_captcha" value="false" />
+          </form>
         </div>
       </div>
-
-      <div class="contact-form-wrapper">
-        <form class="contact-form" method="POST" action="https://formsubmit.co/iliyanatsatsarova@outlook.com">
-          <h2>Contact me</h2>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fname">First name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your first name..." required />
-            </div>
-
-            <div class="form-group">
-              <label for="lname">Last name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..." required />
-            </div>
-
-            <div class="form-group">
-              <label for="email">E-mail:</label>
-              <input type="email" id="email" name="email" placeholder="Your e-mail..." required />
-            </div>
-
-            <div class="form-group">
-              <label for="message">Your message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required ></textarea>
-            </div>
-
-          </div>
-
-          <button type="submit" class="submit-btn">Send</button>
-          <input type="hidden" name="_captcha" value="false">
-
-        </form>
-        
-      </div>
-      </div> 
     </section>
     <div id="toast" class="toast">Message sent successfully!</div>
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-

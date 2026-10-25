@@ -210,19 +210,24 @@ a {
 /* SKILLS  */
 
 .skills {
+  min-height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 70px;
+  padding: 100px 20px 40px 20px; 
+  background-color: #1F2833;
 }
 
 .my-skills {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;      
+  justify-content: center; 
+  gap: 30px;             
 }
+
 .skill {
   height: 200px;
   width: 350px;
@@ -235,13 +240,18 @@ a {
   justify-content: center;
   align-items: flex-start;
   background-color: #1d1f29;
-  color: #c5c6c7;
+  color: #C5C6C7;
 }
 
 .skill-title {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #66fcf1;
+  color: #66FCF1;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  box-shadow: #45A29E 0px 20px 30px -10px;
 }
 
 .skill:hover {
@@ -764,7 +774,7 @@ a {
   }
 
   .aboutme {
-    padding: 150px 15px ;
+    padding: 150px 15px;
     min-height: auto;
     text-align: center;
   }
@@ -801,7 +811,6 @@ a {
     height: auto;
     min-height: auto;
     box-sizing: border-box;
-    
   }
 
   .contact-card {
